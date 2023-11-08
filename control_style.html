@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Basic</title>
+    <script>
+        //이벤트를 연결
+        window.onload = function(){
+            //문서 객체를 추가한
+            let output = '';
+            for(let i=0; i<256; i++){
+                output += '<div></div>'
+            }
+
+            document.body.innerHTML = output;
+            //문서 객체를 선택
+
+            let divs = document.querySelectorAll('div');
+            for(let i=0;i<divs.length; i++){
+                //변수를 선언
+                let div = divs[i];
+
+                //스타일을 작용
+                div.style.height = '2px';
+                // div.style.background = 'rgb('+i+','+i+','+i+')';
+                div.style.background = 'rgb('+i+','+180+i+','+240+i+')';
+            }
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
