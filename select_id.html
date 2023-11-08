@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Basic</title>
+    <script>
+        //이벤트 연결
+        window.onload = function(){
+            //문서 객체를 선택
+            let bbb = document.getElementById('aaa');
+
+            //문서 객체를 조작
+            bbb.style.color = 'orange';
+            bbb.style.background = 'red';
+            bbb.innerHTML = 'From Javascript';
+
+        };
+    </script>
+</head>
+<body>
+    <h1 id="aaa">Header</h1>
+</body>
+</html>
