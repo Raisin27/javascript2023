@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('button').click(function(){
+                $('.page').fadeToggle('slow');
+            });
+        });
+    </script>
+</head>
+<body>
+    <button>Toggle Show</button>
+    <div class="page">
+        <h1>태그가 사라졌다가 나타나는 효과</h1>
+        <p>태그가 사라졌다가 나타나는 효과, 시각 효과</p>
+    </div>
+</body>
+</html>
